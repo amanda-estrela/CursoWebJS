@@ -8,3 +8,9 @@ console.log(num1)
 
 console.log(++num1 === num2--) //true, compara antes de realizar o --
 console.log(num1 === num2) // false
+
+
+/* 
+(++num1 === num2--)
+evitar este tipo de comparação com o incremento ou decremento, para o código ficar claro, legível
+*/

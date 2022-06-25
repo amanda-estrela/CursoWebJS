@@ -7,4 +7,4 @@ const obj = { min:10, max:100}
 console.log(rand(obj))
 console.log(rand({min: 200, max:500}))
 console.log(rand({}))
-console.log(rand())
+//console.log(rand()) gera erro
