@@ -9,4 +9,4 @@ function imprimirResultado(nota) {
 imprimirResultado(10)
 imprimirResultado(4)
 imprimirResultado("10")
-imprimirResultado("Nota")
+imprimirResultado("Nota") // a comparação de string com number vai resultar em FALSE!
