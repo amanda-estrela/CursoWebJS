@@ -9,8 +9,8 @@ console.log(aprovados[1])
 console.log(aprovados[2])
 console.log(aprovados[3]) //retorna undefined
 
-aprovados[3] = 'Max'
-aprovados.push('Abia')
+aprovados[3] = 'Max' // método melhor usado para substituir elementos
+aprovados.push('Abia') // add elemento no final
 console.log(aprovados.length)
 
 aprovados[9] = 'Rafael'
