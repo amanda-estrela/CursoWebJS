@@ -6,7 +6,21 @@
     <title>CSS Selectors</title>
     <link rel="stylesheet" href="css/tag.css">
     <style>
-        /* ... */
+        /*    * = seletor universal */
+        /* .tag = seletor de classe */
+        /* #aninhado = seletor de id */
+        /* #aninhado > div = dentro do id, o div filho direto */
+        /* #aninhado > section = esse não vai funcionar pq section não é filho direto, usar '#aninhado section' */
+        /* p + ul = irmãos um logo em seguida do outro (pega o ul) */
+        /* p ~ ol = irmãos não vizinhos (pega o ol) */
+        /* [feira] = seletor de propriedade */
+        /* [feira=casa], [feira~=escritorio], [feira*=sa] */
+        /* span:nth-child(1) = span que é filho de qualquer elemento na posição especificada */
+        /* section > nth-child(odd) = dentro de section, todos os filhos conforme especificado(odd, even, numero) */
+        section > span:nth-of-type(2) { /* dentro de section, o determinado span*/
+            color: #ff0;
+            background-color: #f77;
+        }
     </style>
 </head>
 
