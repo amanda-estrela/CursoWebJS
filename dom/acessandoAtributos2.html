@@ -17,7 +17,13 @@
         </ul>
     </div>
     <script>
-        // ...
+        const lista = document.querySelector('div ul[destino="escritório"]')
+        console.log('Elemento ul')
+        console.log('childNodes', lista.childNodes)
+        console.log('destino', lista.destino) /*não funciona*/
+        console.log('getAttribute', lista.getAttribute('destino')) 
+        console.log(lista.dataset.urgencia) /*atributos personalizados com o inicio 'data-' são acessados com uso do dataset*/
+        lista.dataset.urgencia = 4
     </script>
 </body>
 
