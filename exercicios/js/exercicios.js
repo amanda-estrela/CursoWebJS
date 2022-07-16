@@ -48,4 +48,40 @@ function retornaDinheiro(x) {
     console.log('R$' + x.toFixed(2).replace('.', ","))
 }
 
-retornaDinheiro(0.1+0.2)
+//retornaDinheiro(0.1+0.2)
+
+//6
+function jurosSimples(capital, juros, tempo) {
+    let total = capital + capital * juros * tempo
+    console.log(total)
+}
+
+//jurosSimples(1200, 0.02, 15)
+
+function jurosCompostos(capital, juros, tempo) {
+    let total = capital  * (1 + juros) ** tempo
+    console.log(total.toFixed(2).replace('.', ","))
+}
+
+//jurosCompostos(5000, 0.01, 6)
+
+
+//40
+function conceito(notas) {
+    notas.forEach(element => {
+        if(element<=4.9){
+            console.log(`${element}: conceito D.`)
+        } else if (element<=6.9) {
+            console.log(`${element}: conceito C.`)
+        } else if(element<=8.9) {
+            console.log(`${element}: conceito B.`)
+        } else {
+            console.log(`${element}: conceito A.`)
+        }
+        
+    });
+}
+
+let notas = [3.2, 5.7, 7.2, 9.8]
+
+//conceito(notas)
