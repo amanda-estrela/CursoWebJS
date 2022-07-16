@@ -40,5 +40,12 @@ function divisao(dividendo, divisor) {
     console.log(`Resultado: ${dividendo/divisor}, Resto: ${dividendo % divisor}`)
 }
 
-divisao(16, 4)
-divisao(20, 3)
+// divisao(16, 4)
+// divisao(20, 3)
+
+//5
+function retornaDinheiro(x) {
+    console.log('R$' + x.toFixed(2).replace('.', ","))
+}
+
+retornaDinheiro(0.1+0.2)
