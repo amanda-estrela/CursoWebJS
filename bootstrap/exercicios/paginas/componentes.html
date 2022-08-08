@@ -141,10 +141,10 @@
 <!-- Tooltip -->
 <div>
     <div class="alert alert-warning">
-        Precisa chamar uma função JS! 
+        Precisa chamar uma função JS!
         <strong>E agora?</strong>
     </div>
-    
+
     <button class="btn btn-danger" data-toggle="tooltip" data-placement="top" title="Pense antes">Excluir</button>
 </div>
 
@@ -158,7 +158,7 @@
 <!-- Slider -->
 <div>
     <div class="carousel slide" id="slider" data-ride="carousel">
-        <div class="carousel-inner">
+        <div class="carousel-inner bg-dark">
             <div class="carousel-item active">
                 <img src="/imgs/slide1.png" alt="Slide1" class="d-block mx-auto">
             </div>
@@ -172,7 +172,7 @@
         <a href="#slider" class="carousel-control-prev" data-slide="prev">
             <span class="carousel-control-prev-icon"></span>
         </a>
-        <a href="#slider" class="carousel-control-next" data-slide="carousel-control-next">
+        <a href="#slider" class="carousel-control-next" data-slide="next">
             <span class="carousel-control-next-icon"></span>
         </a>
     </div>
@@ -187,6 +187,49 @@
 <hr>
 
 <!-- Accordion -->
+<div>
+    <div class="mb-5 accordion">
+        <div class="card">
+            <div class="card-header" id="pergunta1">
+                <h5 class="mb-0">
+                    <button class="btn btn-link" data-toggle="collapse" data-target="resposta1">
+                        Quem é o professor de programação mais legal?
+                    </button>
+                </h5>
+            </div>
+            <div class="collapse" id="resposta1" data-parent="#accordion">
+                <div class="card-body">
+                    Posso dizer? :)
+                </div>
+            </div>
+        </div>
+        <div class="card-header" id="pergunta2">
+            <h5 class="mb-0">
+                <button class="btn btn-link" data-toggle="collapse" data-target="resposta2">
+                    Teste 2?
+                </button>
+            </h5>
+        </div>
+        <div class="collapse" id="resposta2" data-parent="#accordion">
+            <div class="card-body">
+                Teste 2
+            </div>
+        </div>
+        <div class="card-header" id="pergunta3">
+            <h5 class="mb-0">
+                <button class="btn btn-link" data-toggle="collapse" data-target="resposta3">
+                    Teste 3?
+                </button>
+            </h5>
+        </div>
+        <div class="collapse" id="resposta3" data-parent="#accordion">
+            <div class="card-body">
+                Teste 3 :)
+            </div>
+        </div>
+
+    </div>
+</div>
 
 <script>
     $('[data-toggle="tooltip"]').tooltip()
